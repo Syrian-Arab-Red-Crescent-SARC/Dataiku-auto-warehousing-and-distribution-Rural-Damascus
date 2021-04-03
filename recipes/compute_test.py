@@ -56,7 +56,7 @@ total_sum_of_open_balnce_for_now = 0
 
 def rdSystem():
     # get list of email subjects from INBOX folder
-    with MailBox('imap.gmail.com').login('rd.sarc.im.ca@gmail.com', '@uVdE^9jEIQqlqjr#vl8010m7X#') as mailbox:
+    with MailBox('imap.gmail.com').login('rd.sarc.im.ca@gmail.com', 'fijrbnvyolqscuro') as mailbox:
         for msg in mailbox.fetch(A(seen=False)):
             #print(msg)
             #print(msg.from_)
@@ -168,7 +168,7 @@ def rdSystem():
 
 
             # setup the parameters of the message
-            password = "@uVdE^9jEIQqlqjr#vl8010m7X#"
+            password = "fijrbnvyolqscuro"
             msg['From'] = "rd.sarc.im.ca@gmail.com"
             msg['To'] = str(replyFor)
             #msg['To'] = "rd.sarc.im.ca@gmail.com"           
