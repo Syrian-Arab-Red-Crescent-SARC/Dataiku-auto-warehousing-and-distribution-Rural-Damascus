@@ -1,0 +1,29 @@
+{
+  "projectExportManifest": {
+    "exportUploads": true,
+    "exportAllInputDatasets": true,
+    "exportAllDatasets": true,
+    "exportManagedFS": true,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": true,
+    "exportAllInputManagedFolders": true,
+    "exportInsightsData": true,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "exportGitRepository": false
+  },
+  "instanceFeatures": {
+    "showFlowNavLink": true,
+    "showLabNavLink": true,
+    "showCodeNavLink": true,
+    "showVersionControlFeatures": true
+  },
+  "useAppHomepage": true,
+  "homepageSections": [],
+  "label": "SARC_RD_WearHouse_Reports",
+  "shortDesc": "The template *SARC_RD_WearHouse_Reports* was created by Administrator on Jan 02nd 2021",
+  "tags": [],
+  "instantiationPermission": "USE_APP_MASTER_PERMISSIONS"
+}

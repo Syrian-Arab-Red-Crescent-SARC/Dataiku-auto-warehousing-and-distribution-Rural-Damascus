@@ -1,0 +1,31 @@
+{
+  "type": "metrics",
+  "params": {
+    "objectSmartId": "wearhouse_row_compning_ok_month_prepared",
+    "objectType": "DATASET",
+    "metricId": "reporting:BUILD_START_DATE"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Build date on wearhouse_row_compning_ok_month_prepared",
+  "dashboardCreationId": "EAztylP",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611662550471
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611662550471
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

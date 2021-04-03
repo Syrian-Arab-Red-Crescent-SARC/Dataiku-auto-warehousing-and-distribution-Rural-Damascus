@@ -1,0 +1,311 @@
+{
+  "type": "FilesInFolder",
+  "managed": false,
+  "formatType": "excel",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "xlsx": true,
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": true,
+    "skipRowsBeforeHeader": 1,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheets": "*Distribution"
+  },
+  "partitioning": {
+    "filePathPattern": "//.*",
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 14,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1614110043738
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1609870216499
+  },
+  "tags": [],
+  "params": {
+    "folderSmartId": "HY4TiL65",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "RULES_INCLUDED_ONLY",
+      "excludeRules": [],
+      "includeRules": [
+        {
+          "matchingMode": "FILENAME",
+          "mode": "GLOB",
+          "expr": "*dis*"
+        }
+      ],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Month",
+        "type": "string"
+      },
+      {
+        "name": "Branch",
+        "type": "string"
+      },
+      {
+        "name": "Sub-Branch",
+        "type": "string"
+      },
+      {
+        "name": "Governorate Name",
+        "type": "string"
+      },
+      {
+        "name": "District",
+        "type": "string"
+      },
+      {
+        "name": "SubDistrict",
+        "type": "string"
+      },
+      {
+        "name": "Community",
+        "type": "string"
+      },
+      {
+        "name": "Location",
+        "type": "string"
+      },
+      {
+        "name": "Dis_type",
+        "type": "string"
+      },
+      {
+        "name": "Neighborhood",
+        "type": "string"
+      },
+      {
+        "name": "Name of Specific Location",
+        "type": "string"
+      },
+      {
+        "name": "Partner",
+        "type": "string"
+      },
+      {
+        "name": "Item",
+        "type": "string"
+      },
+      {
+        "name": "Sector",
+        "type": "string"
+      },
+      {
+        "name": "Quantity",
+        "type": "string"
+      },
+      {
+        "name": "Unit",
+        "type": "string"
+      },
+      {
+        "name": "Other Items",
+        "type": "string"
+      },
+      {
+        "name": "CTN",
+        "type": "string"
+      },
+      {
+        "name": "Number of Families",
+        "type": "string"
+      },
+      {
+        "name": "Men",
+        "type": "string"
+      },
+      {
+        "name": "Women",
+        "type": "string"
+      },
+      {
+        "name": "Male Children",
+        "type": "string"
+      },
+      {
+        "name": "Female Children",
+        "type": "string"
+      },
+      {
+        "name": "Total Number of Beneficiaries",
+        "type": "string"
+      },
+      {
+        "name": "Beneficiary Condition",
+        "type": "string"
+      },
+      {
+        "name": "Beneficiary condition main",
+        "type": "string"
+      },
+      {
+        "name": "Convoys",
+        "type": "string"
+      },
+      {
+        "name": "Return",
+        "type": "string"
+      },
+      {
+        "name": "Nots",
+        "type": "string"
+      },
+      {
+        "name": "GovCode",
+        "type": "string"
+      },
+      {
+        "name": "DistrictCode",
+        "type": "string"
+      },
+      {
+        "name": "SubDistrictCode",
+        "type": "string"
+      },
+      {
+        "name": "Community Pcode",
+        "type": "string"
+      },
+      {
+        "name": "123",
+        "type": "string"
+      },
+      {
+        "name": "unique code",
+        "type": "string"
+      },
+      {
+        "name": "branch_Code",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "partitioning",
+        "enabled": true,
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "meta": {
+          "name": "Partitioning statistics",
+          "level": 1
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

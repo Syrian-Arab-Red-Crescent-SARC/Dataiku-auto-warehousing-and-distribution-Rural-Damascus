@@ -1,0 +1,90 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "123": 183,
+      "Month": 148,
+      "Branch": 176,
+      "Sub-Branch": 198,
+      "Governorate Name": 176,
+      "District": 211,
+      "SubDistrict": 190,
+      "Community": 100,
+      "Location": 300,
+      "Dis_type": 300,
+      "Neighborhood": 105,
+      "Name of Specific Location": 246,
+      "Partner": 100,
+      "Item": 274,
+      "Sector": 141,
+      "Quantity": 100,
+      "Unit": 100,
+      "Other Items": 100,
+      "CTN": 100,
+      "Number of Families": 150,
+      "Men": 100,
+      "Women": 100,
+      "Male Children": 113,
+      "Female Children": 128,
+      "Total Number of Beneficiaries": 233,
+      "Beneficiary Condition": 300,
+      "Beneficiary condition main": 232,
+      "Convoys": 100,
+      "Return": 100,
+      "Nots": 190,
+      "GovCode": 113,
+      "DistrictCode": 105,
+      "SubDistrictCode": 128,
+      "Community Pcode": 128,
+      "unique code": 100,
+      "branch_Code": 100,
+      "id": 239,
+      "timestamp": 141
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

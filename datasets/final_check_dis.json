@@ -1,0 +1,284 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1615392384714
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1609878074480
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/final_check_dis",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Month",
+        "type": "string"
+      },
+      {
+        "name": "Sub-Branch",
+        "type": "string"
+      },
+      {
+        "name": "Partner",
+        "type": "string"
+      },
+      {
+        "name": "CTN",
+        "type": "string"
+      },
+      {
+        "name": "Unit",
+        "type": "string"
+      },
+      {
+        "name": "Item",
+        "type": "string"
+      },
+      {
+        "name": "Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "werhouse_Total_out_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "check_dis_and_total_out",
+        "type": "string"
+      },
+      {
+        "name": "count",
+        "type": "bigint"
+      },
+      {
+        "name": "werhouse_Item",
+        "type": "string"
+      },
+      {
+        "name": "werhouse_count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "partition": "NP",
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [
+      {
+        "code": "import dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\n\n# Read recipe inputs\ncheck_data_for_open_banlce \u003d dataiku.Dataset(\"final_check_dis\")\ncheck_data_for_open_banlce_df \u003d check_data_for_open_banlce.get_dataframe()\n\ndef process(last_values, dataset, partition_id):\n    dis_list_true \u003d []\n    dis_list_false \u003d []\n    \n    for y in check_data_for_open_banlce_df[\"check_dis_and_total_out\"].items():\n        if y[1] \u003d\u003d 1:\n            dis_list_true.append(y[0])\n        else:   \n            dis_list_false.append(y[0])\n        \n\n    if len(dis_list_false) \u003e 0 :\n        return \u0027ERROR\u0027,\u0027you have \u0027+ str(len(dis_list_false)) + \u0027 false in dis. and \u0027 + str(len(dis_list_true)) + \u0027 true in dis.\u0027 \n    else:\n        return \u0027OK\u0027, \u0027you have \u0027+ str(len(dis_list_true)) + \u0027 true in dis. and \u0027 + str(len(dis_list_false))  + \u0027 false in dis.\u0027",
+        "envSelection": {
+          "envMode": "INHERIT"
+        },
+        "type": "python",
+        "meta": {
+          "name": "Custom check"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
+    "displayedState": {
+      "partition": "NP",
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

@@ -1,0 +1,17 @@
+{
+  "gitReferences": {
+    "python/": {
+      "remote": "https://github.com/gorakhargosh/watchdog.git",
+      "checkout": "refs/heads/master",
+      "remotePath": ""
+    }
+  },
+  "pythonPath": [
+    "python",
+    "python/"
+  ],
+  "rsrcPath": [
+    "R"
+  ],
+  "importLibrariesFromProjects": []
+}

@@ -1,0 +1,1162 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "univariate_header",
+      "showHistogram": true,
+      "showQuantile": true,
+      "showFrequencyTable": true,
+      "showSummary": true,
+      "showBoxPlot": true,
+      "xColumns": [
+        {
+          "name": "Month",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Branch",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Sub-Branch",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Warehouse_Name",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Partner",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Item",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Sector",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Open_Balance",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Total_IN",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Total_out",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Loss",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Damage",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Inventory",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Closing_Balance",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Transfer",
+          "type": "CATEGORICAL"
+        },
+        {
+          "name": "Nots",
+          "type": "CATEGORICAL"
+        }
+      ],
+      "cards": [
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Month",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Month",
+                "type": "CATEGORICAL"
+              },
+              "id": "mPQs20i"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Month",
+                "type": "CATEGORICAL"
+              },
+              "id": "bN4v7Zj"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Month",
+                "type": "CATEGORICAL"
+              },
+              "id": "U3ZeUyj"
+            }
+          ],
+          "id": "JBpUj9e"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Branch",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Branch",
+                "type": "CATEGORICAL"
+              },
+              "id": "NezRYBr"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Branch",
+                "type": "CATEGORICAL"
+              },
+              "id": "YpVyTWv"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Branch",
+                "type": "CATEGORICAL"
+              },
+              "id": "TymUFSO"
+            }
+          ],
+          "id": "pxPvbaT"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Sub-Branch",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Sub-Branch",
+                "type": "CATEGORICAL"
+              },
+              "id": "M2HgLoz"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Sub-Branch",
+                "type": "CATEGORICAL"
+              },
+              "id": "WZwCfee"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Sub-Branch",
+                "type": "CATEGORICAL"
+              },
+              "id": "QoAqYll"
+            }
+          ],
+          "id": "HWvrBax"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Warehouse_Name",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Warehouse_Name",
+                "type": "CATEGORICAL"
+              },
+              "id": "spdQ9Sx"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Warehouse_Name",
+                "type": "CATEGORICAL"
+              },
+              "id": "GxPpKMk"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Warehouse_Name",
+                "type": "CATEGORICAL"
+              },
+              "id": "odIlh5j"
+            }
+          ],
+          "id": "pVbVXM2"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Partner",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Partner",
+                "type": "CATEGORICAL"
+              },
+              "id": "sREPvSN"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Partner",
+                "type": "CATEGORICAL"
+              },
+              "id": "AvWUGsd"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Partner",
+                "type": "CATEGORICAL"
+              },
+              "id": "r9XOYc7"
+            }
+          ],
+          "id": "WhdJC91"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Item",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Item",
+                "type": "CATEGORICAL"
+              },
+              "id": "ttCkoPw"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Item",
+                "type": "CATEGORICAL"
+              },
+              "id": "X03No6V"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Item",
+                "type": "CATEGORICAL"
+              },
+              "id": "2qkD812"
+            }
+          ],
+          "id": "nOobAag"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Sector",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Sector",
+                "type": "CATEGORICAL"
+              },
+              "id": "rp1E3J6"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Sector",
+                "type": "CATEGORICAL"
+              },
+              "id": "mquzCZY"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Sector",
+                "type": "CATEGORICAL"
+              },
+              "id": "JiqRyHz"
+            }
+          ],
+          "id": "yaH6Ktu"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Open_Balance",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Open_Balance",
+                "type": "CONTINUOUS"
+              },
+              "id": "I5yD1wi"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Open_Balance",
+                "type": "CONTINUOUS"
+              },
+              "id": "02eCZwU"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Open_Balance",
+                "type": "CONTINUOUS"
+              },
+              "id": "9in5N05"
+            }
+          ],
+          "id": "czmJcQc"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Total_IN",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Total_IN",
+                "type": "CONTINUOUS"
+              },
+              "id": "N1Mta2L"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Total_IN",
+                "type": "CONTINUOUS"
+              },
+              "id": "knfwJAw"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Total_IN",
+                "type": "CONTINUOUS"
+              },
+              "id": "Ssg3plY"
+            }
+          ],
+          "id": "MU2glrY"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Total_out",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Total_out",
+                "type": "CONTINUOUS"
+              },
+              "id": "ajSUhEX"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Total_out",
+                "type": "CONTINUOUS"
+              },
+              "id": "8w46N94"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Total_out",
+                "type": "CONTINUOUS"
+              },
+              "id": "fvxgDIG"
+            }
+          ],
+          "id": "5AvWgHD"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Loss",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Loss",
+                "type": "CONTINUOUS"
+              },
+              "id": "nZwgdYz"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Loss",
+                "type": "CONTINUOUS"
+              },
+              "id": "Ne7lhUh"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Loss",
+                "type": "CONTINUOUS"
+              },
+              "id": "OzKWlGA"
+            }
+          ],
+          "id": "Rl16LSm"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Damage",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Damage",
+                "type": "CONTINUOUS"
+              },
+              "id": "kWnK2tA"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Damage",
+                "type": "CONTINUOUS"
+              },
+              "id": "8iiTh6o"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Damage",
+                "type": "CONTINUOUS"
+              },
+              "id": "VqqtPuy"
+            }
+          ],
+          "id": "vT5G5BT"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Inventory",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Inventory",
+                "type": "CONTINUOUS"
+              },
+              "id": "M2wpYNJ"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Inventory",
+                "type": "CONTINUOUS"
+              },
+              "id": "bMuNCnL"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Inventory",
+                "type": "CONTINUOUS"
+              },
+              "id": "zpaxTz9"
+            }
+          ],
+          "id": "jCFpTxJ"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Closing_Balance",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Closing_Balance",
+                "type": "CONTINUOUS"
+              },
+              "id": "VRsMbLK"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Closing_Balance",
+                "type": "CONTINUOUS"
+              },
+              "id": "QkGgBgv"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Closing_Balance",
+                "type": "CONTINUOUS"
+              },
+              "id": "mp3W1bz"
+            }
+          ],
+          "id": "zYAfpg3"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Transfer",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Transfer",
+                "type": "CATEGORICAL"
+              },
+              "id": "yGXfTh4"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Transfer",
+                "type": "CATEGORICAL"
+              },
+              "id": "KeTbaDv"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Transfer",
+                "type": "CATEGORICAL"
+              },
+              "id": "BotwB5C"
+            }
+          ],
+          "id": "B3Q11RG"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Nots",
+            "type": "CATEGORICAL"
+          },
+          "cards": [
+            {
+              "type": "categorical_histogram",
+              "maxValues": 10,
+              "groupOthers": false,
+              "column": {
+                "name": "Nots",
+                "type": "CATEGORICAL"
+              },
+              "id": "l0EIydS"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Nots",
+                "type": "CATEGORICAL"
+              },
+              "id": "XEkZc6N"
+            },
+            {
+              "type": "univariate_frequency_table",
+              "maxValues": 10,
+              "column": {
+                "name": "Nots",
+                "type": "CATEGORICAL"
+              },
+              "id": "sudB16m"
+            }
+          ],
+          "id": "DL8YnuK"
+        }
+      ],
+      "id": "3KWMZSC"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "wearhouse_row_data_prepared_check_ok",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "Sub-Branch",
+                "operator": "contains",
+                "col": "Month",
+                "num": 0.0
+              }
+            ]
+          }
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 1,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Univariate analysis on 16 variables ",
+  "dashboardCreationId": "EAztylP",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1612402005931
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1612402005931
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

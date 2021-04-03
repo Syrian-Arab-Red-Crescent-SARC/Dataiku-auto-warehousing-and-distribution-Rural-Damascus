@@ -1,0 +1,202 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "wearhouse_row_data_prepared_check_ok",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "pie",
+      "variant": "normal",
+      "name": "Avg. of Total_IN by Item",
+      "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "Item",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Total_IN, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Total_IN, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "Total_IN",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "Sub-Branch",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.6,
+        "gridLatDeg": 0.6
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADm0lEQVRoQ+3Ye0hTURwH8N/1kRkMM5z5VmxgGfRnNQy0gkDaSv/xH6MiW5pPSKOGhBGSz2QuU5MyIv9pRsMU0poOBrYgSMKeBM65QsW5iY8pOnfjCLfW2No899yVzf0l3HPP+X3O93fOmBT42IfyMS9sgrlIXNv1oWJ1Sp22M3UZBB0V8CD7C5jKJXA78eLvy9H0jL5WnMlFDcycnCbc+eq7Jgisi+KFli3ahdPA39sL/I5bxqfZb8Kmy89TTYn5tCucvkZ0mAs4J2DDFY26a8YKrcJiuJGkgsx5GSCwzTgALw1TEJ+dC+ZrOavyhAJ/dyjScOLgj0m71byMNvgT+GpcjLVFpYTGuPwAd2D0nCSaKFiYIlXfNyrXDM7Qg/oY0JqNxjJeeJhM070iiy0I9ARMEk0MnFVU0Wl4uxyGikNoBLYBvSKJapzP298cyrQ1OseC/q0gG3xmlUUVepQwsykkkiYCbtXVqpmiHp4yr/3JoO1bO2LStHZxCfoDLXJtT1BDRJHbM+zYAWzRxMGoQITOsHw2iS2fdjCtHXU2ee3yQm2dYpCCfExIN4QXr399Ch7pq0Xtnh4Fx3HrX9BhBvt07R8hNHOeNWl35pqEJbzhaNFPcNP4wcX60JJgnMLZpMwK3DxSt8+PohtdFc2g7VNGbd039BgizZqpquBSPg6YBmplrOb4MZx3WYFdpessaYRO35MPwzFiuh9CpnUvehcqqbJ4nKLZ3Nqcg5kzjdp7IK0ZEs4kLu3appwe6ulelM5dEmwYcMtITSlFUSJPC2baO0saAHcDrhuM5nu24m+F2AnjpoydsCft7LgZCK04lA7RR/tWVZPvLJL3eTxPN8zZOJzLy6tgpr3nJN10fUj6RO7r1Mj/HoyAyrLZmZy8A3BZRW33CTCDrGpNZuPF+lHh9Za2F/ocuLotmaZt+P9m2hCXlmMPs0nZu+DROiHQ9E1WhxAANgwYQXG+i51tEA4aJ120Nval5ZPg9nE5f3lpScG2rdH760mZpmB2rFp0EmddVgn/rZRx25l1SzM7TOIsf9XzJp48j41wm1qg7Zy+8oTO7TgXA1gn7O2U2aRLLGFSaHfnmC2WKJhrNAkscTAJtLOUSWE5AaNJW3S1rRRAEu7F8gtN0fqa40dw53H2HpFLy1VBuLc3ApNM1b4+TsHMQgpa4W8aHVW5S8rP36/6QlxZn7txbJ57BcymQNLvboJJ7+i/Np/PJfwDgzW7OI0DYVMAAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Avg. of Total_IN by Item on wearhouse_row_data_prepared_check_ok",
+  "dashboardCreationId": "EAztylP",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611661824159
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611661824159
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

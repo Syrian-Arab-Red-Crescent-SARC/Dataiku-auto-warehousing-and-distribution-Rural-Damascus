@@ -1,0 +1,299 @@
+{
+  "type": "FilesInFolder",
+  "managed": false,
+  "formatType": "excel",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "xlsx": true,
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": false,
+    "skipRowsBeforeHeader": 1,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheets": "*Warehouse"
+  },
+  "partitioning": {
+    "filePathPattern": "",
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 24,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1614084530443
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1609541836535
+  },
+  "tags": [],
+  "params": {
+    "folderSmartId": "1Rv8SrvU",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "RULES_INCLUDED_ONLY",
+      "excludeRules": [],
+      "includeRules": [
+        {
+          "matchingMode": "FILENAME",
+          "mode": "GLOB",
+          "expr": "*warehouse*"
+        }
+      ],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Month",
+        "type": "string"
+      },
+      {
+        "name": "Branch",
+        "type": "string"
+      },
+      {
+        "name": "Sub-Branch",
+        "type": "string"
+      },
+      {
+        "name": "Warehouse Name",
+        "type": "string"
+      },
+      {
+        "name": "Partner",
+        "type": "string"
+      },
+      {
+        "name": "Item",
+        "type": "string"
+      },
+      {
+        "name": "Sector",
+        "type": "string"
+      },
+      {
+        "name": "Unit",
+        "type": "string"
+      },
+      {
+        "name": "CTN",
+        "type": "string"
+      },
+      {
+        "name": "Other Items",
+        "type": "string"
+      },
+      {
+        "name": "Open. Balance",
+        "type": "string"
+      },
+      {
+        "name": "Total IN",
+        "type": "string"
+      },
+      {
+        "name": "Receiving Date",
+        "type": "string"
+      },
+      {
+        "name": "Goods Received Note",
+        "type": "string"
+      },
+      {
+        "name": "Total out",
+        "type": "string"
+      },
+      {
+        "name": "Delivery Note",
+        "type": "string"
+      },
+      {
+        "name": "Location of sent Items",
+        "type": "string"
+      },
+      {
+        "name": "Sending Date",
+        "type": "string"
+      },
+      {
+        "name": "Loss",
+        "type": "string"
+      },
+      {
+        "name": "Reasons for Loss",
+        "type": "string"
+      },
+      {
+        "name": "Damage",
+        "type": "string"
+      },
+      {
+        "name": "Reasons for Damage",
+        "type": "string"
+      },
+      {
+        "name": "Inventory",
+        "type": "string"
+      },
+      {
+        "name": "Closing Balance",
+        "type": "string"
+      },
+      {
+        "name": "Distribtution",
+        "type": "string"
+      },
+      {
+        "name": "Return",
+        "type": "string"
+      },
+      {
+        "name": "Transfer",
+        "type": "string"
+      },
+      {
+        "name": "Convoys",
+        "type": "string"
+      },
+      {
+        "name": "Nots",
+        "type": "string"
+      },
+      {
+        "name": "Branch Code",
+        "type": "string"
+      },
+      {
+        "name": "Sub Branch code",
+        "type": "string"
+      },
+      {
+        "name": "123",
+        "type": "string"
+      },
+      {
+        "name": "Unique Items Code",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "partitioning",
+        "enabled": true,
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "meta": {
+          "name": "Partitioning statistics",
+          "level": 1
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

@@ -1,0 +1,144 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "Open_Balance_sum",
+        "columns": [
+          "old_Closing_Balance_sum"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(isNonBlank(old_Closing_Balance_sum), if(old_Closing_Balance_sum \u003d\u003d Open_Balance_sum, \"True\",\"False\"),if(Open_Balance_sum \u003e 0 ,\"False\", \"ok\"))",
+        "column": "check_status_open_balnce"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(Open_Balance_sum + Total_IN_sum \u003d\u003d Total_out_sum + Closing_Balance_sum + Loss_sum + Damage_sum + Inventory_sum, \"True\",\"False\")",
+        "column": "check_status"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "check_status_open_balnce",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "check_status",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "check_status_open_balnce": 195,
+    "Loss_sum": 100,
+    "count": 100,
+    "newcolumn_expression": 165,
+    "old_Closing_Balance_sum": 188,
+    "Closing_Balance_sum": 158,
+    "old_count": 100,
+    "Other_Items": 100,
+    "Warehouse_Name": 155,
+    "Unit": 100,
+    "Total_IN_sum": 105,
+    "Total_out_sum": 113,
+    "check_status": 105,
+    "old_Item": 260,
+    "old_Month": 141,
+    "Inventory_sum": 113,
+    "Item": 260,
+    "Month": 106,
+    "old_Other_Items": 128,
+    "Damage_sum": 100,
+    "Sub-Branch": 120,
+    "Open_Balance_sum": 135,
+    "CTN": 100,
+    "Partner": 100
+  },
+  "sorting": [
+    {
+      "column": "check_status_open_balnce",
+      "ascending": true
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "INDIVIDUAL_COLUMNS_VALUES",
+    "individualColumns": [
+      "check_status",
+      "check_status_open_balnce"
+    ],
+    "valueColoringMode": "HASH"
+  }
+}

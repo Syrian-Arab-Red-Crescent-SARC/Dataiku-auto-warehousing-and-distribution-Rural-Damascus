@@ -1,0 +1,29 @@
+{
+  "type": "scenario_last_runs",
+  "params": {
+    "scenarioSmartId": "SACR_RD_WEARHOUSE_ADD_NEW_DATA"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Timeline view of scenario SACR_RD_WEARHOUSE_ADD_NEW_DATA",
+  "dashboardCreationId": "EAztylP",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611662154170
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611662154170
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
