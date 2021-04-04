@@ -108,8 +108,12 @@ def rdSystem():
                         total_sum_of_open_balnce_for_now = df['Open_Balance_sum'].sum()
                         tt2 = df.to_html()
                         ttForStusts = df['check_status'].value_counts()
-
-                        isPassOpenBalnce = "False" in tt
+                        
+                        if "ok" in tt:
+                            isPassOpenBalnce = "False" in tt
+                        else:
+                            isPassOpenBalnce = 0 in tt
+                            
                         isPassStatus = 0 in ttForStusts
                         #check dis files
                 elif  "dis" in att.filename :
