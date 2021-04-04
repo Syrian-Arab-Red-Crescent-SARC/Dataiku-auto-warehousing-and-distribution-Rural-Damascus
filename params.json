@@ -169,7 +169,7 @@
       }
     }
   },
-  "name": "Test instance for SARC_RD_WEARHOUSE_REPORTS",
+  "name": "SARC_RD",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -226,11 +226,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617460366879
+    "lastModifiedOn": 1617546282454
   },
   "creationTag": {
     "versionNumber": 0,
