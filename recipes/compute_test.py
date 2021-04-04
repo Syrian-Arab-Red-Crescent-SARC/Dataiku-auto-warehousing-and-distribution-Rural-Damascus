@@ -109,7 +109,7 @@ def rdSystem():
                         tt2 = df.to_html()
                         ttForStusts = df['check_status'].value_counts()
 
-                        isPassOpenBalnce = 0 in tt
+                        isPassOpenBalnce = "False" in tt
                         isPassStatus = 0 in ttForStusts
                         #check dis files
                 elif  "dis" in att.filename :
