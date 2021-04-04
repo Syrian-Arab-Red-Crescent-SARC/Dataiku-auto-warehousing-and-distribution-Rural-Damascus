@@ -148,6 +148,13 @@ def rdSystem():
 
             else:
                 print("nothing to show here")
+                
+                isPassOpenBalnce = 1
+                isPassStatus = 1
+                isPassDis = 1
+
+                total_sum_of_Closing_sum_for_old = 0
+                total_sum_of_open_balnce_for_now = 0
 
 
 
