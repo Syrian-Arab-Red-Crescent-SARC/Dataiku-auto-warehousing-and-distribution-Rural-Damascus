@@ -159,7 +159,10 @@ def rdSystem():
 
             elif isPassStatus or isPassDis:
                 resultsWerar = "FAILED"
-
+            
+            elif total_sum_of_Closing_sum_for_old != total_sum_of_open_balnce_for_now:
+                resultsWerar = "FAILED"
+                
             else:
                 resultsWerar = "SUCCEED"
                 finalBuild = project.get_dataset("wearhouse_row_data_prepared_check_ok").build()
