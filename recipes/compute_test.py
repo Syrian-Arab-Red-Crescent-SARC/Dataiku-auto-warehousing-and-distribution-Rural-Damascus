@@ -155,6 +155,8 @@ def rdSystem():
 
                 total_sum_of_Closing_sum_for_old = 0
                 total_sum_of_open_balnce_for_now = 0
+                
+                resultsWerar = "Wrong file name!"
 
 
 
@@ -189,29 +191,33 @@ def rdSystem():
             msg['Cc'] = "tarepsh@gmail.com"
             msg['Subject'] = "SARC RD IM AUTO SYSTEM %s" % (subject)
 
+            if resultsWerar == "Wrong file name!":
+                body = MIMEText("<h3>your last test is: </h3>" + str(resultsWerar) + "<br>", 'html', 'utf-8')
+            
+            else:
+                body = MIMEText("<h3>your last test is: </h3>" + str(resultsWerar) + "<br>" +
+                                    str(tt) + "<br> your total sum of closing balacne is:" + str(total_sum_of_Closing_sum_for_old) + "</br> </br>"
+                                    "And you total  sum of open balcnce is: " + str( total_sum_of_open_balnce_for_now) + "<br> your dis data is" + str(distt)
+                                     + "<br>", 'html', 'utf-8')
+                msg.attach(body)
+                # attach image to message body
+                fp = open(file, 'rb')
+                part = MIMEBase('application','vnd.ms-excel')
+                part.set_payload(fp.read())
+                fp.close()
+                encoders.encode_base64(part)
+                part.add_header('Content-Disposition', 'attachment', filename='results_w.xlsx')
 
-            body = MIMEText("<h3>your last test is: </h3>" + str(resultsWerar) + "<br>" +
-                                str(tt) + "<br> your total sum of closing balacne is:" + str(total_sum_of_Closing_sum_for_old) + "</br> </br>"
-                                "And you total  sum of open balcnce is: " + str( total_sum_of_open_balnce_for_now) + "<br> your dis data is" + str(distt)
-                                 + "<br>", 'html', 'utf-8')
-            msg.attach(body)
-            # attach image to message body
-            fp = open(file, 'rb')
-            part = MIMEBase('application','vnd.ms-excel')
-            part.set_payload(fp.read())
-            fp.close()
-            encoders.encode_base64(part)
-            part.add_header('Content-Disposition', 'attachment', filename='results_w.xlsx')
+                fp2 = open(file2, 'rb')
+                part2 = MIMEBase('application','vnd.ms-excel')
+                part2.set_payload(fp2.read())
+                fp2.close()
+                encoders.encode_base64(part2)
+                part2.add_header('Content-Disposition', 'attachment', filename='results_d.xlsx')
 
-            fp2 = open(file2, 'rb')
-            part2 = MIMEBase('application','vnd.ms-excel')
-            part2.set_payload(fp2.read())
-            fp2.close()
-            encoders.encode_base64(part2)
-            part2.add_header('Content-Disposition', 'attachment', filename='results_d.xlsx')
-
-            msg.attach(part)
-            msg.attach(part2)
+                msg.attach(part)
+                msg.attach(part2)
+                
             # create server
             server = smtplib.SMTP('smtp.gmail.com: 587')
 
