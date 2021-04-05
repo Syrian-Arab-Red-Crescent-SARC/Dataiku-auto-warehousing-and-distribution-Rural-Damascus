@@ -110,7 +110,8 @@
             "computeModeDim": 0
           }
         ],
-        "xDimension": [
+        "xDimension": [],
+        "yDimension": [
           {
             "column": "Warehouse_Name",
             "type": "ALPHANUM",
@@ -147,7 +148,6 @@
             }
           }
         ],
-        "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
         "uaSize": [],
