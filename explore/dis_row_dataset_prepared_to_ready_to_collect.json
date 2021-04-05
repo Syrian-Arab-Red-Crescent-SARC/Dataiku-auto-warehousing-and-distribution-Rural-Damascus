@@ -216,6 +216,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -267,7 +268,7 @@
         "xDimension": [],
         "yDimension": [
           {
-            "column": "Governorate Name",
+            "column": "Item",
             "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
@@ -377,6 +378,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
