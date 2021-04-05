@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1615392384714
+    "lastModifiedOn": 1617615649524
   },
   "creationTag": {
     "versionNumber": 0,
@@ -116,7 +116,8 @@
       },
       {
         "name": "werhouse_Total_out_sum",
-        "type": "bigint"
+        "type": "bigint",
+        "meaning": "LongMeaning"
       },
       {
         "name": "check_dis_and_total_out",
@@ -137,6 +138,7 @@
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": [
       {
