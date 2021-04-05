@@ -7,10 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 0,
+              "left": 0,
+              "width": 4,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -30,10 +30,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 0,
+              "left": 4,
+              "width": 4,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -60,11 +60,11 @@
   "name": "SARC_RD_WearHouse_Reports\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 46,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617611134897
+    "lastModifiedOn": 1617611196908
   },
   "creationTag": {
     "versionNumber": 0,
