@@ -1,0 +1,158 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "123": 300,
+      "Month": 106,
+      "Branch": 176,
+      "Sub-Branch": 232,
+      "Warehouse Name": 190,
+      "Partner": 100,
+      "Item": 300,
+      "Sector": 141,
+      "Unit": 100,
+      "CTN": 100,
+      "Other Items": 100,
+      "Open. Balance": 113,
+      "Total IN": 100,
+      "Receiving Date": 120,
+      "Receiving Date_iso": 150,
+      "Goods Received Note": 158,
+      "Total out": 100,
+      "Delivery Note": 113,
+      "Location of sent Items": 180,
+      "Sending Date": 105,
+      "Sending Date_iso": 135,
+      "Loss": 100,
+      "Reasons for Loss": 135,
+      "Damage": 100,
+      "Reasons for Damage": 150,
+      "Inventory": 100,
+      "Closing Balance": 128,
+      "Distribtution": 162,
+      "Return": 100,
+      "Transfer": 113,
+      "Convoys": 100,
+      "Nots": 183,
+      "Branch Code": 100,
+      "Sub Branch code": 128,
+      "Unique Items Code": 143
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "Sub-Branch",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Sub-Branch",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "Yabroud يبرود": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Sub-Branch",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Sub-Branch",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "Item",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Item",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "Wheat Flour-طحين": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Item",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Item",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}
