@@ -177,8 +177,8 @@ def rdSystem():
             # setup the parameters of the message
             password = "fijrbnvyolqscuro"
             msg['From'] = "rd.sarc.im.ca@gmail.com"
-            msg['To'] = str(replyFor)
-            #msg['To'] = "rd.sarc.im.ca@gmail.com"           
+            #msg['To'] = str(replyFor)
+            msg['To'] = "rd.sarc.im.ca@gmail.com"           
             msg['Cc'] = "tarepsh@gmail.com"
             msg['Subject'] = "SARC RD IM AUTO SYSTEM %s" % (subject)
 
