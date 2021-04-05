@@ -89,13 +89,30 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "pie",
+        "type": "pivot_table",
         "variant": "normal",
         "name": "Avg. of Total_IN by Item",
         "userEditedName": true,
-        "genericDimension0": [
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
           {
-            "column": "Item",
+            "column": "Total_IN",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [
+          {
+            "column": "Warehouse_Name",
             "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
@@ -124,29 +141,12 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of Total_IN, descending"
             }
           }
         ],
-        "genericDimension1": [],
-        "facetDimension": [],
-        "animationDimension": [],
-        "genericMeasures": [
-          {
-            "column": "Total_IN",
-            "function": "SUM",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          }
-        ],
-        "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
@@ -232,7 +232,6 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADLUlEQVRoQ+3ZX2hSURwH8HOdS9uaGhH9k0zaKMbobW+9RH/2sBpELxYVFUFtRY3+Kc1BD+HqaQVjVIsIoofaAsFKGGtBbCpFEb00GJY99I/I5lTKnLtxhFPX6716/l3LnK/+PPf3Od/fuf4TQIU9hArzgjmwFon3HXrkBkDYKF37isMC6tyDuZcTQSIY6NmmRQ9oTU0THrve9/jVi7Xx2YyuTo4YcFiqatyDGTVccLxngxZwTcAQKm325bPGvN5vOMwGg3soVQzFG84dLMdCkBLYu8v8OXl2aEkxMHyeJ5orWAmLQHK0f6cpEu26twoHzBPNDWxz3s+O8e2GiKJBDg7trg2HXd7VuGBeaC5ghEXNK6HfTFo/TE+ZlqOaiT3G8HOnjwjMA60JWC1pacpf9s6LDJ95gD3SvydBELzBMc9lksmQ1jKD5elKF5cnLQWn9+nf3z3lX0HTOMtNjAlsPe1rqNIJ1wo1rYY2H9BP9Z/wW2jAQBQywYBnE81rmcCF0lVLGqVsPSh8utg5vJSmaZazXBKw9EwnE/MTk6/tCxoPp951HX1iKxuwzeXbDkThGEnDaLxhys1HYrHO9qdmktfLa2nOMnXCuOMsbxKiIXhdR+ars2N0UdmAm242ZT9ofP+4Y2ZmqllP0jhEx9asj5933cn7UkGyTkkTRuBCDc7+WJZKvj1ukNcIAIhXTYunzz30ls9I44ALbYa1WheP9bf+XwkXAl9amQTd3Q6SCc6r/edGWk0DsfBREWCERZvBgi5pwvUD9VZjtfEWyUzKsawplxQMmyW5cSlhWcA0WHg96g8eJGA1LMtY/xUwDroYli5lIR4c97SRHCdUy5RwMTAOlgZMmy7zSKNdUzrLuFjSsRYz4v5Q6ILyD2cYkTMnrJQyKZYkZZZ0uSUsRW82/fzWakkvxNjsnBKc92NWLFcwQtOkizPWPLDcwXDBkVF7zt8sJEmrpcwLqwk4ix6xnwQ6sJUEC2t7e9uS0WhN7Z+3ECEdGPdsIV2nUD2Xm5baBWjSRinzTFXan6Zg6YVw8Jm02N7SEpngmah8rZKBtUSQrD0HJtmtcqytuIR/Ad5oRzjZ/oZeAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
