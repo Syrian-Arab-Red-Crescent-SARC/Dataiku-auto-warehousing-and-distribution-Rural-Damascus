@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617615649524
+    "lastModifiedOn": 1617615652580
   },
   "creationTag": {
     "versionNumber": 0,
@@ -112,7 +112,8 @@
       },
       {
         "name": "Quantity_sum",
-        "type": "bigint"
+        "type": "bigint",
+        "meaning": "LongMeaning"
       },
       {
         "name": "werhouse_Total_out_sum",
