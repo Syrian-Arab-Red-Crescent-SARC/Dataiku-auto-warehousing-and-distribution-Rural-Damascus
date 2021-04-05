@@ -268,7 +268,7 @@
         "xDimension": [],
         "yDimension": [
           {
-            "column": "Item",
+            "column": "Community",
             "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
