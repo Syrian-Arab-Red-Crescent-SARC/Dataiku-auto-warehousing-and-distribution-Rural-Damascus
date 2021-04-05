@@ -99,8 +99,8 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "Total_IN",
-            "function": "AVG",
+            "column": "Total_out",
+            "function": "SUM",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -132,12 +132,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Total_IN, descending"
+                "label": "Sum of Total_out, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Total_IN, ascending",
+                "label": "Sum of Total_out, ascending",
                 "sortAscending": true
               }
             ],
@@ -252,8 +252,8 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "Total_IN",
-            "function": "AVG",
+            "column": "Total_out",
+            "function": "SUM",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -285,19 +285,19 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Total_IN, descending"
+                "label": "Sum of Total_out, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Total_IN, ascending",
+                "label": "Sum of Total_out, ascending",
                 "sortAscending": true
               }
             ],
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of Total_IN, descending"
+              "label": "Sum of Total_out, descending"
             }
           }
         ],
