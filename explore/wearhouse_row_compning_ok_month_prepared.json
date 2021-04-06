@@ -98,7 +98,7 @@
           "currentMode": "ALPHANUM",
           "sort": "count",
           "selectedValues": {
-            "Dhameer الضمير": true
+            "Rural Damascus ريف دمشق": true
           }
         },
         "alphanumFilter": {
@@ -113,6 +113,76 @@
         "validityFilter": {
           "type": "validity",
           "column": "Sub-Branch",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "Warehouse_Name",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Warehouse_Name",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "مستودع فريق تعزيز الصحة": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Warehouse_Name",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Warehouse_Name",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "Partner",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Partner",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "UNICEF": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Partner",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Partner",
           "params": {
             "type": "Text",
             "ok": true,
