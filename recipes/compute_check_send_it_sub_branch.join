@@ -12,23 +12,6 @@
       "on": [
         {
           "column1": {
-            "name": "Month",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "Month",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
             "name": "Sub-Branch",
             "table": 0
           },
@@ -66,16 +49,6 @@
   ],
   "selectedColumns": [
     {
-      "name": "Month",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "Branch",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "Sub-Branch",
       "type": "string",
       "table": 0
@@ -84,11 +57,6 @@
       "name": "Warehouse_Name",
       "type": "string",
       "table": 0
-    },
-    {
-      "name": "Branch",
-      "type": "string",
-      "table": 1
     },
     {
       "name": "Sub-Branch",
@@ -146,6 +114,7 @@
       "computedColumns": []
     },
     {
+      "autoSelectColumns": false,
       "prefix": "old",
       "index": 1
     }
@@ -156,23 +125,11 @@
       "schema": {
         "columns": [
           {
-            "name": "Month",
-            "type": "string"
-          },
-          {
-            "name": "Branch",
-            "type": "string"
-          },
-          {
             "name": "Sub-Branch",
             "type": "string"
           },
           {
             "name": "Warehouse_Name",
-            "type": "string"
-          },
-          {
-            "name": "old_Branch",
             "type": "string"
           },
           {
