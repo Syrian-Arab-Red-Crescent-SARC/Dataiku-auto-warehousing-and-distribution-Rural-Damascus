@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617697817091
+    "lastModifiedOn": 1617698006233
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,23 +87,11 @@
   "schema": {
     "columns": [
       {
-        "name": "Month",
-        "type": "string"
-      },
-      {
-        "name": "Branch",
-        "type": "string"
-      },
-      {
         "name": "Sub-Branch",
         "type": "string"
       },
       {
         "name": "Warehouse_Name",
-        "type": "string"
-      },
-      {
-        "name": "old_Branch",
         "type": "string"
       },
       {
