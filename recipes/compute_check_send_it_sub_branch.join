@@ -66,6 +66,11 @@
   ],
   "selectedColumns": [
     {
+      "name": "Month",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "Sub-Branch",
       "type": "string",
       "table": 0
@@ -74,6 +79,11 @@
       "name": "Warehouse_Name",
       "type": "string",
       "table": 0
+    },
+    {
+      "name": "Month",
+      "type": "string",
+      "table": 1
     },
     {
       "name": "Sub-Branch",
@@ -152,11 +162,19 @@
       "schema": {
         "columns": [
           {
+            "name": "Month",
+            "type": "string"
+          },
+          {
             "name": "Sub-Branch",
             "type": "string"
           },
           {
             "name": "Warehouse_Name",
+            "type": "string"
+          },
+          {
+            "name": "old_Month",
             "type": "string"
           },
           {
