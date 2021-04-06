@@ -71,6 +71,11 @@
       "table": 0
     },
     {
+      "name": "Branch",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "Sub-Branch",
       "type": "string",
       "table": 0
@@ -81,7 +86,7 @@
       "table": 0
     },
     {
-      "name": "Month",
+      "name": "Branch",
       "type": "string",
       "table": 1
     },
@@ -93,11 +98,6 @@
     {
       "name": "Warehouse_Name",
       "type": "string",
-      "table": 1
-    },
-    {
-      "name": "count",
-      "type": "bigint",
       "table": 1
     }
   ],
@@ -146,14 +146,8 @@
       "computedColumns": []
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
       "prefix": "old",
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     }
   ],
   "computedColumns": [],
@@ -166,6 +160,10 @@
             "type": "string"
           },
           {
+            "name": "Branch",
+            "type": "string"
+          },
+          {
             "name": "Sub-Branch",
             "type": "string"
           },
@@ -174,7 +172,7 @@
             "type": "string"
           },
           {
-            "name": "old_Month",
+            "name": "old_Branch",
             "type": "string"
           },
           {
@@ -184,10 +182,6 @@
           {
             "name": "old_Warehouse_Name",
             "type": "string"
-          },
-          {
-            "name": "old_count",
-            "type": "bigint"
           }
         ],
         "userModified": false

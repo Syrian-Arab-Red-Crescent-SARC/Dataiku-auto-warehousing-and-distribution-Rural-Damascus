@@ -17,7 +17,7 @@
           "deps": []
         },
         {
-          "ref": "test_tarek_month",
+          "ref": "wearhouse_row_compning_ok_month_prepared",
           "deps": []
         }
       ]
@@ -34,11 +34,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617697742687
+    "lastModifiedOn": 1617697817912
   },
   "creationTag": {
     "versionNumber": 0,
