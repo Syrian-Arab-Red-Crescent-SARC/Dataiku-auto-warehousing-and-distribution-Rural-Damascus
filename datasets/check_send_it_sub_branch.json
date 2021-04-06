@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617697597558
+    "lastModifiedOn": 1617697705177
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,19 +87,6 @@
   "schema": {
     "columns": [
       {
-        "name": "id",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "Month",
-        "type": "string"
-      },
-      {
-        "name": "Branch",
-        "type": "string"
-      },
-      {
         "name": "Sub-Branch",
         "type": "string"
       },
@@ -108,136 +95,15 @@
         "type": "string"
       },
       {
-        "name": "Partner",
+        "name": "old_Sub-Branch",
         "type": "string"
       },
       {
-        "name": "Item",
+        "name": "old_Warehouse_Name",
         "type": "string"
       },
       {
-        "name": "Sector",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "Unit",
-        "type": "string"
-      },
-      {
-        "name": "CTN",
-        "type": "string"
-      },
-      {
-        "name": "Other_Items",
-        "type": "string"
-      },
-      {
-        "name": "Open_Balance",
-        "type": "bigint"
-      },
-      {
-        "name": "Total_IN",
-        "type": "bigint"
-      },
-      {
-        "name": "Receiving_Date",
-        "type": "string"
-      },
-      {
-        "name": "Goods_Received_Note",
-        "type": "string"
-      },
-      {
-        "name": "Total_out",
-        "type": "bigint"
-      },
-      {
-        "name": "Delivery_Note",
-        "type": "string"
-      },
-      {
-        "name": "Location_of_sent_Items",
-        "type": "string"
-      },
-      {
-        "name": "Sending_Date",
-        "type": "string"
-      },
-      {
-        "name": "Loss",
-        "type": "bigint"
-      },
-      {
-        "name": "Reasons_for_Loss",
-        "type": "string"
-      },
-      {
-        "name": "Damage",
-        "type": "bigint"
-      },
-      {
-        "name": "Reasons_for_Damage",
-        "type": "string"
-      },
-      {
-        "name": "Inventory",
-        "type": "bigint"
-      },
-      {
-        "name": "Closing_Balance",
-        "type": "bigint"
-      },
-      {
-        "name": "Distribtution",
-        "type": "string"
-      },
-      {
-        "name": "Return",
-        "type": "string"
-      },
-      {
-        "name": "Transfer",
-        "type": "string"
-      },
-      {
-        "name": "Convoys",
-        "type": "string"
-      },
-      {
-        "name": "Nots",
-        "type": "string"
-      },
-      {
-        "name": "Branch_Code",
-        "type": "bigint"
-      },
-      {
-        "name": "Sub_Branch_code",
-        "type": "bigint"
-      },
-      {
-        "name": "123",
-        "type": "string"
-      },
-      {
-        "name": "Unique_Items_Code",
-        "type": "string"
-      },
-      {
-        "name": "Receiving_Date_iso",
-        "type": "string"
-      },
-      {
-        "name": "timestamp ",
-        "type": "string"
-      },
-      {
-        "name": "Closing_Balance_sum",
-        "type": "bigint"
-      },
-      {
-        "name": "count",
+        "name": "old_count",
         "type": "bigint"
       }
     ],
