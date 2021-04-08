@@ -122,21 +122,23 @@
         }
       },
       {
-        "column": "Closing_Balance",
+        "column": "Partner",
         "type": "columnFilter",
         "currentMode": "FACET",
         "active": true,
         "facet": {
           "type": "facet",
-          "column": "Closing_Balance",
-          "columnType": "NUMERICAL",
-          "currentMode": "NUMERICAL",
+          "column": "Partner",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "ERC": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
-          "column": "Closing_Balance",
+          "column": "Partner",
           "values": [],
           "params": {
             "mode": "full_string",
@@ -145,9 +147,9 @@
         },
         "validityFilter": {
           "type": "validity",
-          "column": "Closing_Balance",
+          "column": "Partner",
           "params": {
-            "type": "LongMeaning",
+            "type": "Text",
             "ok": true,
             "nok": true,
             "empty": true
