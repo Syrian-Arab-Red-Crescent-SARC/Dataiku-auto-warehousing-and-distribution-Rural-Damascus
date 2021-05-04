@@ -52,7 +52,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnValue",
@@ -64,6 +64,26 @@
         ],
         "values": [
           "Without Distribution - غير مذكور بالتوزيع"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Return"
+        ],
+        "values": [
+          "مرتجع من إجمالي الصادر - Return from Total Out"
         ],
         "matchingMode": "FULL_STRING",
         "action": "REMOVE_ROW",
