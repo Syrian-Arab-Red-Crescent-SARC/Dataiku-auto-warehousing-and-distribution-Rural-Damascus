@@ -72,7 +72,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": false,
+      "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnValue",
@@ -83,7 +83,7 @@
           "Return"
         ],
         "values": [
-          "مرتجع من إجمالي الصادر - Return from Total Out"
+          "مرتجع من إجمالي الصادر - Return From Total Out"
         ],
         "matchingMode": "FULL_STRING",
         "action": "REMOVE_ROW",
