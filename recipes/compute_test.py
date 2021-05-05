@@ -65,7 +65,7 @@ def rdSystem():
             for att in msg.attachments:
                 #print(att.filename, att.content_type)
                 #chcek old wearhouse data
-                if "old" in att.filename.lower():
+                if "old" in att.filename.lower() :
                     with open('{}/{}'.format(pathOld, att.filename.replace(att.filename, "old_data.xlsx")), 'wb') as f:
                         f.write(bytearray(att.payload))
                         #JobBuildCode()
