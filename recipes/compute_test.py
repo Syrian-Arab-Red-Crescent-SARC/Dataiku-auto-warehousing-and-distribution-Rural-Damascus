@@ -65,7 +65,7 @@ def rdSystem():
             for att in msg.attachments:
                 #print(att.filename, att.content_type)
                 #chcek old wearhouse data
-                if "old" in att.filename :
+                if "old" in att.filename.lower():
                     with open('{}/{}'.format(pathOld, att.filename.replace(att.filename, "old_data.xlsx")), 'wb') as f:
                         f.write(bytearray(att.payload))
                         #JobBuildCode()
@@ -75,7 +75,7 @@ def rdSystem():
                         dataset_old4 = project.get_dataset("test_tarek_month").build()
 
 
-                elif  "war" in att.filename:
+                elif  "war" in att.filename.lower():
 
                     #check wearhous
                     with open('{}/{}'.format(path, att.filename.replace(att.filename, "warehouse15.xlsx")), 'wb') as f:
@@ -116,7 +116,7 @@ def rdSystem():
                             
                         isPassStatus = 0 in ttForStusts
                         #check dis files
-                elif  "dis" in att.filename :
+                elif  "dis" in att.filename.lower() :
 
                     #check dis
                     with open('{}/{}'.format(pathDis, att.filename.replace(att.filename, "dis.xlsx")), 'wb') as f:
