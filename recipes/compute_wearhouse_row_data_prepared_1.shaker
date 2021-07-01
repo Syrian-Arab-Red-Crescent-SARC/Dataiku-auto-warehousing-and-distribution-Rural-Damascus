@@ -1,0 +1,343 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "Month"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "CAPITALIZE_FULLY",
+        "columns": [
+          "Month"
+        ],
+        "appliesTo": "ALL",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Sector",
+          "Open. Balance",
+          "Total IN",
+          "Total out",
+          "Loss",
+          "Damage",
+          "Inventory",
+          "Closing Balance",
+          "Return"
+        ],
+        "appliesTo": "COLUMNS",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Warehouse Name",
+            "to": "Warehouse_Name"
+          },
+          {
+            "from": "Other Items",
+            "to": "Other_Items"
+          },
+          {
+            "from": "Open. Balance",
+            "to": "Open_Balance"
+          },
+          {
+            "from": "Total IN",
+            "to": "Total_IN"
+          },
+          {
+            "from": "Receiving Date",
+            "to": "Receiving_Date"
+          },
+          {
+            "from": "Receiving Date_iso",
+            "to": "Receiving_Date_iso"
+          },
+          {
+            "from": "Goods Received Note",
+            "to": "Goods_Received_Note"
+          },
+          {
+            "from": "Total out",
+            "to": "Total_out"
+          },
+          {
+            "from": "Delivery Note",
+            "to": "Delivery_Note"
+          },
+          {
+            "from": "Location of sent Items",
+            "to": "Location_of_sent_Items"
+          },
+          {
+            "from": "Sending Date",
+            "to": "Sending_Date"
+          },
+          {
+            "from": "Reasons for Loss",
+            "to": "Reasons_for_Loss"
+          },
+          {
+            "from": "Reasons for Damage",
+            "to": "Reasons_for_Damage"
+          },
+          {
+            "from": "Closing Balance",
+            "to": "Closing_Balance"
+          },
+          {
+            "from": "Branch Code",
+            "to": "Branch_Code"
+          },
+          {
+            "from": "Sub Branch code",
+            "to": "Sub_Branch_code"
+          },
+          {
+            "from": "Unique Items Code",
+            "to": "Unique_Items_Code"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Sub-Branch",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Warehouse_Name",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Partner",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Item",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Other_Items",
+        "sortingType": "ALPHA",
+        "descending": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "CTN"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Other_Items"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TO_UPPER",
+        "columns": [
+          "Partner"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Closing_Balance": 128,
+    "Convoys": 100,
+    "Nots": 162,
+    "Reasons_for_Damage": 150,
+    "Reasons for Damage": 150,
+    "Unit": 100,
+    "Total IN": 100,
+    "Month": 100,
+    "Item": 183,
+    "Total_IN": 100,
+    "Location_of_sent_Items": 180,
+    "Branch Code": 100,
+    "Closing Balance": 128,
+    "id": 245,
+    "Damage": 100,
+    "Delivery_Note": 113,
+    "Sub Branch code": 128,
+    "Total out": 100,
+    "Other Items": 100,
+    "Reasons for Loss": 135,
+    "Warehouse_Name": 155,
+    "Location of sent Items": 180,
+    "123": 183,
+    "Receiving Date_parsed": 173,
+    "Open_Balance": 105,
+    "Sending_Date": 105,
+    "Transfer": 106,
+    "Total_out": 100,
+    "Inventory": 100,
+    "Goods Received Note": 158,
+    "Open. Balance": 113,
+    "Other_Items": 100,
+    "Receiving_Date_iso": 183,
+    "Branch": 106,
+    "Receiving_Date": 120,
+    "Delivery Note": 113,
+    "Sub-Branch": 100,
+    "Partner": 100,
+    "Branch_Code": 100,
+    "Unique_Items_Code": 143,
+    "Return": 100,
+    "Distribtution": 113,
+    "Unique Items Code": 143,
+    "Sector": 100,
+    "Loss": 100,
+    "Receiving Date": 120,
+    "Sub_Branch_code": 128,
+    "Goods_Received_Note": 158,
+    "Sending Date_iso": 135,
+    "Receiving Date_iso": 150,
+    "Sending Date": 105,
+    "Reasons_for_Loss": 135,
+    "Warehouse Name": 120,
+    "CTN": 100
+  },
+  "sorting": [
+    {
+      "column": "Sub-Branch",
+      "ascending": true
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
