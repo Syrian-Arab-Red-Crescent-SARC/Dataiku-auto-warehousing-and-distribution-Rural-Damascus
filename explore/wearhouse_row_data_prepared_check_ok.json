@@ -10,7 +10,7 @@
       "id": 239,
       "Month": 106,
       "Branch": 176,
-      "Sub-Branch": 232,
+      "Sub-Branch": 60,
       "Warehouse_Name": 162,
       "Partner": 100,
       "Item": 300,
@@ -127,7 +127,15 @@
           "currentMode": "ALPHANUM",
           "sort": "count",
           "selectedValues": {
-            "Jirud جيرود": true
+            "An Nabk النبك": true,
+            "Jirud جيرود": true,
+            "Darayya داريا": true,
+            "Az-zabdani الزبداني": true,
+            "Qatana قطنا": true,
+            "Rural Damascus ريف دمشق": true,
+            "Nashabiyeh النشابية": true,
+            "Sidnaya صيدنايا": true,
+            "Yabroud يبرود": true
           }
         },
         "alphanumFilter": {
@@ -145,8 +153,8 @@
           "params": {
             "type": "Text",
             "ok": true,
-            "nok": true,
-            "empty": true
+            "nok": false,
+            "empty": false
           }
         }
       },
