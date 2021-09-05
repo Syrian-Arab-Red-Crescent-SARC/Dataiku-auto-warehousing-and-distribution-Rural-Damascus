@@ -126,17 +126,7 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {
-            "An Nabk النبك": true,
-            "Jirud جيرود": true,
-            "Darayya داريا": true,
-            "Az-zabdani الزبداني": true,
-            "Qatana قطنا": true,
-            "Rural Damascus ريف دمشق": true,
-            "Nashabiyeh النشابية": true,
-            "Sidnaya صيدنايا": true,
-            "Yabroud يبرود": true
-          }
+          "selectedValues": {}
         },
         "alphanumFilter": {
           "type": "alphanum",
@@ -153,8 +143,8 @@
           "params": {
             "type": "Text",
             "ok": true,
-            "nok": false,
-            "empty": false
+            "nok": true,
+            "empty": true
           }
         }
       },
