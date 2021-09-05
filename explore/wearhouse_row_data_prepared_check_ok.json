@@ -126,7 +126,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "Jirud جيرود": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
