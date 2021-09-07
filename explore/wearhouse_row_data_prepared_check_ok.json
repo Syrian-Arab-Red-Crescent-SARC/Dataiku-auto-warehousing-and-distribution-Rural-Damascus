@@ -127,7 +127,7 @@
           "currentMode": "ALPHANUM",
           "sort": "count",
           "selectedValues": {
-            "Rural Damascus ريف دمشق": true
+            "Maliha المليحة": true
           }
         },
         "alphanumFilter": {
@@ -161,7 +161,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "مستودع شبعا": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
