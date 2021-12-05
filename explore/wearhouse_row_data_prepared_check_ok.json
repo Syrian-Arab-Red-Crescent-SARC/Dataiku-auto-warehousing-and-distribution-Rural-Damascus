@@ -126,7 +126,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "Al Qutayfah القطيفة": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
