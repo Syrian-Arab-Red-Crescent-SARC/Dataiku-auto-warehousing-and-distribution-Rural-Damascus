@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1615390158472
+    "lastModifiedOn": 1640089999589
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,11 +87,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "id",
-        "type": "string",
-        "meaning": "Text"
-      },
       {
         "name": "Month",
         "type": "string"
@@ -234,12 +229,18 @@
         "type": "string"
       },
       {
+        "name": "id",
+        "type": "string",
+        "meaning": "Text"
+      },
+      {
         "name": "timestamp ",
         "type": "string"
       }
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": [
       {
