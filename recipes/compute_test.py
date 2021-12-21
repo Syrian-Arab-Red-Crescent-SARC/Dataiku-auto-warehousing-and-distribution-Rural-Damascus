@@ -52,6 +52,8 @@ isPassDis = 1
 
 total_sum_of_closing_sum_for_old = 0
 total_sum_of_open_balnce_for_now = 0
+email = "rd.sarc.im.ca@gmail.com"
+emailPassword = "fijrbnvyolqscuro"
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get list of email from INBOX folder for your rd.sarc email and it's to the right folder
