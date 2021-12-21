@@ -165,6 +165,21 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Branch_Code",
+          "Sub_Branch_code"
+        ],
+        "appliesTo": "COLUMNS",
+        "value": "EMPTY"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "PythonUDF",
       "params": {
         "mode": "CELL",
@@ -193,27 +208,13 @@
           "envMode": "INHERIT"
         },
         "stopOnError": true,
-        "pythonSourceCode": "from datetime import datetime\n\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row`\n\n    timestamp \u003d datetime.now().strftime(\"%Y-%m-%d-%H-%M-%S\")\n\n\n\n    return str(timestamp)\n\n\n",
+        "pythonSourceCode": "from datetime import datetime\n\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row`\n\n    timestamp \u003d datetime.now().strftime(\"%Y-%m-%d/%H-%M\")\n\n\n\n    return str(timestamp)\n\n\n",
         "useKernel": false,
         "column": "timestamp ",
         "sourceColumnsList": [],
         "usePythonUnicode": true,
         "vectorSize": 256,
         "vectorize": false
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "columns": [
-          "id"
-        ],
-        "reorderAction": "AT_START",
-        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     },
@@ -317,6 +318,36 @@
         ],
         "appliesTo": "SINGLE_COLUMN",
         "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TO_UPPER",
+        "columns": [
+          "CTN"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TRIM",
+        "columns": [
+          "CTN"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "truncate_limit": 0
       },
       "alwaysShowComment": false
     }
