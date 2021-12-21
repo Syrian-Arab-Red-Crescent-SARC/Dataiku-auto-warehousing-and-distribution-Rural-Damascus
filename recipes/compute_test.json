@@ -41,6 +41,18 @@
         {
           "ref": "final_check_dis",
           "deps": []
+        },
+        {
+          "ref": "wearhouse_row_data_for_check_wiht_dis",
+          "deps": []
+        },
+        {
+          "ref": "wearhouse_row_data_prepared",
+          "deps": []
+        },
+        {
+          "ref": "dis_row_dataset_prepared",
+          "deps": []
         }
       ]
     }
@@ -56,11 +68,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 336,
+    "versionNumber": 337,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1640089506305
+    "lastModifiedOn": 1640089796929
   },
   "creationTag": {
     "versionNumber": 0,
