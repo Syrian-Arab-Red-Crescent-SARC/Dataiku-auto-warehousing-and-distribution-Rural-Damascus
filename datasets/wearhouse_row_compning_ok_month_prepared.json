@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1614068747234
+    "lastModifiedOn": 1640093745409
   },
   "creationTag": {
     "versionNumber": 0,
@@ -168,10 +168,6 @@
         "type": "string"
       },
       {
-        "name": "Sending Date_iso",
-        "type": "string"
-      },
-      {
         "name": "Loss",
         "type": "bigint"
       },
@@ -217,11 +213,11 @@
       },
       {
         "name": "Branch_Code",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Sub_Branch_code",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "123",
@@ -234,6 +230,7 @@
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": [
       {
