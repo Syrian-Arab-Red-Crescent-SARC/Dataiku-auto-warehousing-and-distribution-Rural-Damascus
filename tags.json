@@ -1,12 +1,16 @@
 {
   "tags": {
-    "deleted-recipe-editor": {},
+    "deleted-recipe-editor": {
+      "color": "#90a8b7"
+    },
     "app instance": {
       "color": "#FF00DD"
     },
     "imported": {
       "color": "#263238"
     },
-    "recipe-editor": {}
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    }
   }
 }
