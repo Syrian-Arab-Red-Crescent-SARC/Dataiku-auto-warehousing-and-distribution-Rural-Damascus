@@ -26,7 +26,7 @@ from imap_tools import MailBox, AND, A
 # define the variable
 
 client = dataiku.api_client()
-project = client.get_project("SARC_RD_WEARHOUSE_REPORTS_7v8q5FRU")
+project = client.get_project("SARC_RD")
 handle = dataiku.Folder("row_wearhouse_reports")
 path_war = handle.get_path()
 
