@@ -77,7 +77,20 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "",
+              "accessToken": "",
+              "repository": ""
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
@@ -111,7 +124,8 @@
     "codeEnvs": {
       "python": {
         "mode": "INHERIT",
-        "preventOverride": false
+        "preventOverride": false,
+        "envName": "python27"
       },
       "r": {
         "mode": "INHERIT",
@@ -235,11 +249,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1617613287463
+    "lastModifiedOn": 1640170161481
   },
   "creationTag": {
     "versionNumber": 0,
