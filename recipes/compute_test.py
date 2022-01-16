@@ -155,9 +155,9 @@ def old_war_check():
     total_sum_of_out_to_check_from_war = war_total_out['Total_out_sum'].sum()
     #check that all the items total from previous month is there
     if (total_sum_of_closing_sum_for_old == total_sum_of_open_balnce_for_now):
-        is_pass_previosu_month = False
-    else:
         is_pass_previosu_month = True
+    else:
+        is_pass_previosu_month = False
 
     #you need this for that is there no "ok" in any coulm will consding all the data as
     #bollen and when there is ok all the data type will be string
@@ -231,7 +231,7 @@ def sedning_email(replyFor, subject,results,counts_of_check_status_open_balnce, 
                         </tr>
                         <tr>
                             <td> مطابقة الرصيد الأفتتاحي مع الشهر الماضي: </td>
-                            <td>""" + str(not is_pass_previosu_month) + """</td>
+                            <td>""" + str(is_pass_previosu_month) + """</td>
                         </tr>
                         <tr>
                             <td> التفاصيل :</td>
@@ -407,7 +407,7 @@ def controller ():
         counts_of_check_status_open_balnce, counts_of_check_status,total_sum_of_closing_sum_for_old, total_sum_of_open_balnce_for_now,is_pass_previosu_month, is_pass_open_balance,is_pass_war_empty_value, total_sum_of_out_to_check_from_war, results_war_excel = old_war_check()
         counts_of_check_status_dis, is_Pass_Dis, is_pass_dis_empty_value, total_sum_of_out_to_check_from_dis, results_dis_excel = dis_check()
 
-        if (total_sum_of_closing_sum_for_old == total_sum_of_open_balnce_for_now) and (total_sum_of_out_to_check_from_war == total_sum_of_out_to_check_from_dis) and (not is_pass_previosu_month) and (not is_pass_open_balance) and (not is_pass_war_empty_value) and (not is_Pass_Dis) and (not is_pass_dis_empty_value ):
+        if (total_sum_of_closing_sum_for_old == total_sum_of_open_balnce_for_now) and (total_sum_of_out_to_check_from_war == total_sum_of_out_to_check_from_dis) and (is_pass_previosu_month) and (not is_pass_open_balance) and (not is_pass_war_empty_value) and (not is_Pass_Dis) and (not is_pass_dis_empty_value ):
             results = "نجاح التحقق"
             is_Pass_Dis_with_war_as_total = (total_sum_of_out_to_check_from_war == total_sum_of_out_to_check_from_dis)
             bulid_final_dataset_war_dis()
