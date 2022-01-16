@@ -46,7 +46,7 @@ distt2 = "NOT SET YET!"
 
 color = 'not set yet'
 
-is_pass_open_balance = 1
+#is_pass_open_balance = 1
 isPassStatus = 1
 isPassDis = 1
 
