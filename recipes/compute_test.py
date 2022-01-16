@@ -241,7 +241,7 @@ def sedning_email(replyFor, subject,results,counts_of_check_status_open_balnce, 
                         </tr>
                         <tr>
                             <td>الرصيد الختامي للشهر نفسه: </td>
-                            <td>""" + str(not is_pass_open_balance) + """</td>
+                            <td>""" + str(is_pass_open_balance) + """</td>
                         </tr>
                         <tr>
                             <td> التفاصيل: </td>
