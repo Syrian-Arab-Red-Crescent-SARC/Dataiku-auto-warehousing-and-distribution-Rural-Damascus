@@ -409,7 +409,7 @@ def controller ():
         counts_of_check_status_open_balnce, counts_of_check_status,total_sum_of_closing_sum_for_old, total_sum_of_open_balnce_for_now,is_pass_previosu_month, is_pass_open_balance,is_pass_war_empty_value, total_sum_of_out_to_check_from_war, results_war_excel = old_war_check()
         counts_of_check_status_dis, is_Pass_Dis, is_pass_dis_empty_value, total_sum_of_out_to_check_from_dis, results_dis_excel = dis_check()
 
-        if (total_sum_of_closing_sum_for_old == total_sum_of_open_balnce_for_now) and (total_sum_of_out_to_check_from_war == total_sum_of_out_to_check_from_dis) and (not is_pass_previosu_month) and (not is_pass_open_balance) and (not is_pass_war_empty_value) and (not is_Pass_Dis) and (not is_pass_dis_empty_value ):
+        if (total_sum_of_closing_sum_for_old == total_sum_of_open_balnce_for_now) and (total_sum_of_out_to_check_from_war == total_sum_of_out_to_check_from_dis) and (not is_pass_previosu_month) and (is_pass_open_balance) and (not is_pass_war_empty_value) and (not is_Pass_Dis) and (not is_pass_dis_empty_value ):
             results = "نجاح التحقق"
             is_Pass_Dis_with_war_as_total = (total_sum_of_out_to_check_from_war == total_sum_of_out_to_check_from_dis)
             bulid_final_dataset_war_dis()
