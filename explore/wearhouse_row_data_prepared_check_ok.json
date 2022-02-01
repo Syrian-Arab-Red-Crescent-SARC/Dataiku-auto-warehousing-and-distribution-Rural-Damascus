@@ -10,7 +10,7 @@
       "id": 239,
       "Month": 106,
       "Branch": 176,
-      "Sub-Branch": 60,
+      "Sub-Branch": 143,
       "Warehouse_Name": 162,
       "Partner": 100,
       "Item": 300,
@@ -98,7 +98,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "January كانون ثاني": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
@@ -132,7 +134,8 @@
           "currentMode": "ALPHANUM",
           "sort": "count",
           "selectedValues": {
-            "Rural Damascus ريف دمشق": true
+            "Rural Damascus ريف دمشق": true,
+            "Arna  عرنة": true
           }
         },
         "alphanumFilter": {
