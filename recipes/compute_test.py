@@ -135,6 +135,7 @@ def color_style(val):
         color = 'grey'
 
     return 'border-width:2px; background-color :%s' % color
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 def old_war_check():
     #geting the need df datafram
@@ -217,7 +218,7 @@ def sedning_email(replyFor, subject,results,counts_of_check_status_open_balnce, 
     # setup the parameters of the message
     password = emailPassword
     msg['From'] = "rd.sarc.im.ca@gmail.com"
-    #just for testing 
+    #just for testing
     #msg['to'] = "rd.sarc.im.ca@gmail.com"
     msg['To'] = str(replyFor)
     msg['Subject'] = "SARC IM AUTO SYSTEM %s" % (subject)
