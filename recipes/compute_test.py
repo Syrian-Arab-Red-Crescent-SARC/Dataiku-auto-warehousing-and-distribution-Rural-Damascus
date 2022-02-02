@@ -167,6 +167,9 @@ def old_war_check():
     else:
         is_pass_open_balance = 0 in counts_of_check_status_open_balnce
 
+    #Check for closing balance
+        is_pass_open_balance = 0 in counts_of_check_status
+
     #check for your empty value
     is_pass_war_empty_value = "EMPTY" in empty_war_df[{'Branch_Code','Sub_Branch_code'}].values
 
@@ -217,9 +220,9 @@ def sedning_email(replyFor, subject,results,counts_of_check_status_open_balnce, 
     msg = MIMEMultipart()
     # setup the parameters of the message
     password = emailPassword
-    msg['From'] = "rd.sarc.im.ca@gmail.com"
+    #msg['From'] = "rd.sarc.im.ca@gmail.com"
     #just for testing
-    #msg['to'] = "rd.sarc.im.ca@gmail.com"
+    msg['to'] = "rd.sarc.im.ca@gmail.com"
     msg['To'] = str(replyFor)
     msg['Subject'] = "SARC IM AUTO SYSTEM %s" % (subject)
     body = MIMEText("""<style>.email-style{direction: rtl;}</style>
