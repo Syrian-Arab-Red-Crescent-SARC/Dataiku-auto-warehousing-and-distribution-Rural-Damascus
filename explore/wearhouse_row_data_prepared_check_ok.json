@@ -131,7 +131,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "Rural Damascus ريف دمشق": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
